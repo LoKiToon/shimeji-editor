@@ -12,6 +12,21 @@ import {
     MenubarTrigger
 } from "@/components/ui/menubar"
 
+import {
+    IconArrowBack,
+    IconArrowBackUp,
+    IconClipboard,
+    IconCopy,
+    IconCut,
+    IconDeviceFloppy,
+    IconDownload,
+    IconFilePlus,
+    IconFileSettings,
+    IconFolder,
+    IconSettings,
+    IconUpload
+} from "@tabler/icons-react"
+
 export default function MenubarComponent() {
     return (
         <Menubar>
@@ -21,7 +36,7 @@ export default function MenubarComponent() {
                 <MenubarGroup>
                     <MenubarGroup>
                         <MenubarSub>
-                            <MenubarSubTrigger>New..</MenubarSubTrigger>
+                            <MenubarSubTrigger><IconFilePlus /> New..</MenubarSubTrigger>
                             <MenubarSubContent>
                                 <MenubarGroup>
                                     <MenubarItem>From Template</MenubarItem>
@@ -31,19 +46,19 @@ export default function MenubarComponent() {
                         </MenubarSub>
                     </MenubarGroup>
                     <MenubarItem>
-                    Open <MenubarShortcut>⌘+O</MenubarShortcut>
+                    <IconFolder /> Open <MenubarShortcut>⌘+O</MenubarShortcut>
                     </MenubarItem>
                     <MenubarItem>
-                    Save <MenubarShortcut>⌘+S</MenubarShortcut>
+                    <IconDeviceFloppy /> Save <MenubarShortcut>⌘+S</MenubarShortcut>
                     </MenubarItem>
                 </MenubarGroup>
                 <MenubarSeparator />
                 <MenubarGroup>
                     <MenubarItem>
-                    Import Shimeji
+                    <IconDownload /> Import Shimeji
                     </MenubarItem>
                     <MenubarItem>
-                    Export Shimeji
+                    <IconUpload /> Export Shimeji
                     </MenubarItem>
                 </MenubarGroup>
                 </MenubarContent>
@@ -53,17 +68,17 @@ export default function MenubarComponent() {
                 <MenubarContent>
                 <MenubarGroup>
                     <MenubarItem>
-                    Undo <MenubarShortcut>⌘+Z</MenubarShortcut>
+                    <IconArrowBackUp /> Undo <MenubarShortcut>⌘+Z</MenubarShortcut>
                     </MenubarItem>
                     <MenubarItem>
-                    Redo <MenubarShortcut>⇧+⌘+Z</MenubarShortcut>
+                    <IconArrowBack /> Redo <MenubarShortcut>⇧+⌘+Z</MenubarShortcut>
                     </MenubarItem>
                 </MenubarGroup>
                 <MenubarSeparator />
                 <MenubarGroup>
-                    <MenubarItem>Cut</MenubarItem>
-                    <MenubarItem>Copy</MenubarItem>
-                    <MenubarItem>Paste</MenubarItem>
+                    <MenubarItem><IconCut /> Cut</MenubarItem>
+                    <MenubarItem><IconCopy /> Copy</MenubarItem>
+                    <MenubarItem><IconClipboard /> Paste</MenubarItem>
                 </MenubarGroup>
                 </MenubarContent>
             </MenubarMenu>
@@ -71,8 +86,8 @@ export default function MenubarComponent() {
                 <MenubarTrigger>Settings</MenubarTrigger>
                 <MenubarContent>
                 <MenubarGroup>
-                    <MenubarItem>Shimeji Feature Set <MenubarShortcut>⌘+L</MenubarShortcut></MenubarItem>
-                    <MenubarItem>Preferences <MenubarShortcut>⌘+,</MenubarShortcut></MenubarItem>
+                    <MenubarItem><IconFileSettings /> Shimeji Feature Set <MenubarShortcut>⌘+L</MenubarShortcut></MenubarItem>
+                    <MenubarItem><IconSettings /> Preferences <MenubarShortcut>⌘+,</MenubarShortcut></MenubarItem>
                 </MenubarGroup>
                 </MenubarContent>
             </MenubarMenu>

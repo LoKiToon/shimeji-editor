@@ -6,14 +6,14 @@ import {
   EmptyTitle,
 } from "@/components/ui/empty"
 import { Button } from "@/components/ui/button"
-import { IconCategory } from "@tabler/icons-react"
+import { IconLayoutGridAdd } from "@tabler/icons-react"
 
 export default function EmptyComponent() {
   return (
     <Empty>
       <EmptyHeader>
         <EmptyMedia variant="icon">
-          <IconCategory />
+          <IconLayoutGridAdd />
         </EmptyMedia>
         <EmptyTitle>Create your Shimeji here</EmptyTitle>
       </EmptyHeader>
