@@ -1,7 +1,7 @@
 import {
     Alert,
     AlertDescription,
-} from "@/components/ui/alert"
+} from "@/components/ui/alert";
 
 import {
     Dialog,
@@ -20,15 +20,15 @@ import {
     FieldDescription,
     FieldLabel,
     FieldTitle,
-} from "@/components/ui/field"
+} from "@/components/ui/field";
 
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
-import { IconAlertCircle } from "@tabler/icons-react";
+import { IconAlertTriangle } from "@tabler/icons-react"
 
 import { Button } from "@/components/ui/button";
 
-export function FeatureModal() {
+export default function FeatureModal() {
     return (
         <Dialog>
         <DialogTrigger asChild>
@@ -67,7 +67,7 @@ export function FeatureModal() {
                 </FieldLabel>
             </RadioGroup>
             <Alert variant="destructive">
-                <IconAlertCircle />
+                <IconAlertTriangle />
                 <AlertDescription>
                     Changing feature sets can result in missing behaviors/actions.
                     This action cannot be undone!

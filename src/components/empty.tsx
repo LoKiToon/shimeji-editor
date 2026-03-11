@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { IconCategory } from "@tabler/icons-react"
 
-export function EmptyComponent() {
+export default function EmptyComponent() {
   return (
     <Empty>
       <EmptyHeader>

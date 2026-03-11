@@ -6,19 +6,30 @@ import {
     MenubarMenu,
     MenubarSeparator,
     MenubarShortcut,
+    MenubarSub,
+    MenubarSubContent,
+    MenubarSubTrigger,
     MenubarTrigger
 } from "@/components/ui/menubar"
 
-export function MenubarComponent() {
+export default function MenubarComponent() {
     return (
         <Menubar>
             <MenubarMenu>
                 <MenubarTrigger>File</MenubarTrigger>
                 <MenubarContent>
                 <MenubarGroup>
-                    <MenubarItem>
-                    New <MenubarShortcut>⌘+N</MenubarShortcut>
-                    </MenubarItem>
+                    <MenubarGroup>
+                        <MenubarSub>
+                            <MenubarSubTrigger>New..</MenubarSubTrigger>
+                            <MenubarSubContent>
+                                <MenubarGroup>
+                                    <MenubarItem>From Template</MenubarItem>
+                                    <MenubarItem>Blank Project</MenubarItem>
+                                </MenubarGroup>
+                            </MenubarSubContent>
+                        </MenubarSub>
+                    </MenubarGroup>
                     <MenubarItem>
                     Open <MenubarShortcut>⌘+O</MenubarShortcut>
                     </MenubarItem>
