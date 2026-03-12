@@ -1,7 +1,7 @@
 import {
   Empty,
   EmptyContent,
-    EmptyHeader,
+  EmptyHeader,
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty"

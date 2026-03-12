@@ -31,9 +31,7 @@ import { Button } from "@/components/ui/button";
 export default function FeatureModal() {
     return (
         <Dialog>
-        <DialogTrigger asChild>
-            <Button>Feature Set Modal</Button>
-        </DialogTrigger>
+        <DialogTrigger render={<Button />}>Feature Set Modal</DialogTrigger>
         <DialogContent>
             <DialogHeader>
                 <DialogTitle>Shimeji Feature Set</DialogTitle>
@@ -74,9 +72,7 @@ export default function FeatureModal() {
                 </AlertDescription>
             </Alert>
             <DialogFooter>
-                <DialogClose asChild>
-                    <Button variant="outline">Cancel</Button>
-                </DialogClose>
+                <DialogClose render={<Button variant="outline" />}>Cancel</DialogClose>
                 <Button>Confirm</Button>
             </DialogFooter>
         </DialogContent>

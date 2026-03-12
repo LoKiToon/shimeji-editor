@@ -18,9 +18,7 @@ import { Button } from "@/components/ui/button"
 export default function UnsavedModal() {
     return (
         <AlertDialog>
-            <AlertDialogTrigger asChild>
-                <Button>Unsaved Modal</Button>
-            </AlertDialogTrigger>
+            <AlertDialogTrigger render={<Button />}>Unsaved Modal</AlertDialogTrigger>
             <AlertDialogContent>
                 <AlertDialogHeader>
                     <AlertDialogMedia>
@@ -33,8 +31,8 @@ export default function UnsavedModal() {
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction>No</AlertDialogAction>
-                    <AlertDialogAction>Yes</AlertDialogAction>
+                    <AlertDialogAction variant="outline">No</AlertDialogAction>
+                    <AlertDialogAction variant="destructive">Yes</AlertDialogAction>
                 </AlertDialogFooter>
             </AlertDialogContent>
         </AlertDialog>
