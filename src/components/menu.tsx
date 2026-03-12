@@ -45,21 +45,13 @@ export default function MenubarComponent() {
                             </MenubarSubContent>
                         </MenubarSub>
                     </MenubarGroup>
-                    <MenubarItem>
-                    <IconFolder /> Open <MenubarShortcut>⌘+O</MenubarShortcut>
-                    </MenubarItem>
-                    <MenubarItem>
-                    <IconDeviceFloppy /> Save <MenubarShortcut>⌘+S</MenubarShortcut>
-                    </MenubarItem>
+                    <MenubarItem><IconFolder /> Open <MenubarShortcut>⌘+O</MenubarShortcut></MenubarItem>
+                    <MenubarItem><IconDeviceFloppy /> Save <MenubarShortcut>⌘+S</MenubarShortcut></MenubarItem>
                 </MenubarGroup>
                 <MenubarSeparator />
                 <MenubarGroup>
-                    <MenubarItem>
-                    <IconDownload /> Import Shimeji
-                    </MenubarItem>
-                    <MenubarItem>
-                    <IconUpload /> Export Shimeji
-                    </MenubarItem>
+                    <MenubarItem><IconDownload /> Import Shimeji</MenubarItem>
+                    <MenubarItem><IconUpload /> Export Shimeji</MenubarItem>
                 </MenubarGroup>
                 </MenubarContent>
             </MenubarMenu>
@@ -67,12 +59,8 @@ export default function MenubarComponent() {
                 <MenubarTrigger>Edit</MenubarTrigger>
                 <MenubarContent>
                 <MenubarGroup>
-                    <MenubarItem>
-                    <IconArrowBackUp /> Undo <MenubarShortcut>⌘+Z</MenubarShortcut>
-                    </MenubarItem>
-                    <MenubarItem>
-                    <IconArrowBack /> Redo <MenubarShortcut>⇧+⌘+Z</MenubarShortcut>
-                    </MenubarItem>
+                    <MenubarItem><IconArrowBackUp /> Undo <MenubarShortcut>⌘+Z</MenubarShortcut></MenubarItem>
+                    <MenubarItem><IconArrowBack /> Redo <MenubarShortcut>⇧+⌘+Z</MenubarShortcut></MenubarItem>
                 </MenubarGroup>
                 <MenubarSeparator />
                 <MenubarGroup>
